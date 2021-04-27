@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title> 
+</head>
+<style>
+    *{
+        background-image: url("best.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    .a{
+        border: 2px blue solid;
+        border-radius: 10%;
+    
+    }
+    .a:hover{
+        text-shadow: brown;
+    }
+    label{
+        color: crimson;
+        text-shadow: 0 0 3px #FF0000;
+        font-size: medium;
+        font-style: italic;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    label:hover{
+        color: red;
+    }
+    h1{
+      color: crimson;
+    }
+    h1:hover{
+      color: red;
+    }
+    legend{
+        color: crimson;
+    }
+    img{
+        width: 100px;
+    }
+</style>
+<body>
+    <center>
+    <h1>WELCOME TO INNOGEEKS</h1>
+    <fieldset>
+        <legend>Personal Information</legend>
+        <img src="im.png">
+    <form action="" method="GET">
+    <label for="fname">First Name:</label>
+    <input class="a" type="text" size="25" placeholder="ENTER YOUR FIRST NAME">
+    <br>
+    <br>
+    <label for="lname">Last Name:</label>
+    <input class="a" type="text" size="25" placeholder="ENTER YOUR LAST NAME">
+    <br>
+    <br>
+
+    <label for="email">Email:</label>
+    <input type="text" class="a" size="25" placeholder="ENTER YOUR EMAIL">
+    <br>
+    <br>
+
+    <label for="year">Year:</label>
+    <input type="text" class="a" size="25" placeholder="ENTER YOUR YEAR">
+    <br>
+    <br>
+
+
+    <label for="address">College:</label>
+    <input type="text" class="a" size="25" placeholder="ENTET YOUR COLLEGE">
+    <br>
+    <br>
+
+    <label for="branch">Branch:</label>
+    <input list="branch" name="branch" class="a" size="25" placeholder="ENTER YOUR BRANCH">
+    <datalist id="branch">
+        <option value="Cse">
+        <option value="IT">
+        <option value="ME">
+        <option value="EC">
+        <option value="CIVIL">
+    </datalist>
+    <br>
+    <br>
+
+    <label for="gender">Gender:</label>
+    <input type="radio" name="g" class="a" size="25">Male
+    <input type="radio" name="g" class="a" size="25">Female
+    <input type="radio" name="g" class="a" size="25">Others
+    <br>
+    <br>
+
+    <label for="address">Address:</label>
+    <input type="text" class="a" size ="30" placeholder="ENTER YOUR ADDRESS">
+    <br>
+    <br>
+    <input type="reset" class="a" size="25">
+    <input type="submit" class="a" size="25">
+</form>
+
+</fieldset>    
+</body>
+</html>
